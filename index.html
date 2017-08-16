@@ -1,13 +1,179 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
-    <meta charset="utf-8" />
-    <meta name="description" content="HTML5 Audio and Video Player">
-    <title>Media Player</title>
+<head>
+  <meta charset="utf8" />
+  <meta name=viewport content="width=device-width, initial-scale=1" />
 
+  <title>UI Challenge</title>
+
+  <style>
+  .logo{
+    width: 200px;
+    height: 60px;
+    background: url('https://static-forums.fatwallet.com/static/attachments/543037_ar_140919961.jpg') no-repeat;
+    background-size: contain;
+  }
+
+  a, a:visited{
+    text-decoration: underline;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+
+  label{
+    color: #393939;
+    font-weight: bold;
+  }
+
+  input[type="text"]{
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .no-list-style{
+    list-style: none;
+    padding: 0;
+  }
+  .list-style-bullet{
+    list-style-type: circle;
+  }
+  .list-style-diamond{
+    list-style-type: square;
+  }
+
+  .footer{
+    background: #366697;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+  }
+  .footer a, .footer a:visited{
+    color: #fff;
+  }
+  </style>
 </head>
+
 <body>
+
+  <div class="logo mui-m"></div>
+
+<div mui-row="gutter--flush" class="mui-m">
+  <div mui-col="1/1 2/3-md">
+    <div mui-row="gutter--flush">
+
+      <div mui-col="1/1 1/2-md">
+        <div class="mui-m-b">
+          <label>First Name</label>
+          <input type="text" />
+        </div>
+      </div>
+
+      <div mui-col="1/1 1/2-md">
+        <div class="mui-m-b">
+          <label>Last Name</label>
+          <input type="text" />
+        </div>
+      </div>
+
+      <div mui-col="1/1 1/2-md">
+        <div class="mui-m-b">
+          <label>Email Address</label>
+          <input type="text" />
+          <label class="mui-m-t">
+            <input type="checkbox" /> Send me updates via email
+          </label>
+        </div>
+      </div>
+
+      <div mui-col="1/1 1/2-md">
+        <div class="mui-m-b">
+          <label>Type of vehicles</label>
+          <input type="radio" name="vehicleType" value="all"> All<br>
+          <input type="radio" name="vehicleType" value="passenger"> Passenger<br>
+          <input type="radio" name="vehicleType" value="specialty"> Specialty/Heavy Trucks & Equipment
+        </div>
+      </div>
+
+      <div mui-col="1/1 1/2-md">
+        <div class="mui-m-b">
+          <label>How did you hear about us?</label>
+          <select>
+            <option value="online">online</option>
+            <option value="online">through the grapevine</option>
+          </select>
+        </div>
+      </div>
+
+      <div mui-col="1/1">
+        <div class="mui-m-b mui-m-t">
+          <button>SUBMIT</button>
+        </div>
+      </div>
+
+      <div mui-row="gutter--flush">
+
+        <div mui-col="1/1 1/2-md">
+          <div class="mui-m-b mui-m-t">
+            <h2>Scheduled Sales</h2>
+            <ul class="no-list-style">
+              <li>
+                <a href="#">Auction Pre-Sales</a>
+                <div>View auction pre-sales by location or cosignor.</div>
+              </li>
+              <li>
+                <a href="#">Simulcast Pre-Sales</a>
+                <div>Bid online in Manheim's LIVE auction sales, featuring real-time audio and video.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div mui-col="1/1 1/2-md">
+          <div class="mui-m-b mui-m-t">
+            <h2 class="italic">Pricing Info</h2>
+            <ul class="no-list-style">
+              <li>
+                <a href="#">Internet MMR</a>
+                <div>Access the most accurate wholesale pricing information in the industry.</div>
+              </li>
+              <li>
+                <a href="#">Post-Sale Results</a>
+                <div>View actual auction results from your favorite Manheim auction.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div mui-col="1/1 1/3-md" class="border-left mui-p-l">
+    <h5>FREE Hands-On Workshop!</h5>
+    <p>The Wholesale Institute is a workshop that is designed to help dealers in developing "Best Practices" for buying and selling wholesale inventory in an online channel.</p>
+    <p>Find a <a href="#">FREE workshop</a> in your area today!</p>
+    <div>Products:</div>
+    <ul class="list-style-diamond">
+      <li>MAFS Inventory Financing</li>
+      <li>
+        <ul class="list-style-bullet">
+          <li>Floorplan</li>
+          <li>Auction Credit Lines</li>
+        </ul>
+      </li>
+      <li>MAFS Rental Inventory Financing</li>
+      <li>MAFS Receivables Funding</li>
+    </ul>
+  </div>
+</div>
+
+<div class="footer">
+  <span class="mui-m-r">&copy; copyright 2017 Manheim</span>
+  <span class="mui-m-l">Email for info: <a href="mailto:">info@manheim.com</a></span>
+</div>
+
+
 
 </body>
 
